@@ -1,5 +1,11 @@
 @import "reset";
+@import "./variables/fonts";
 
 // body {
 //   background-color: purple;
 // }
+
+label {
+  font-family: $roboto;
+  font-weight: $bold;
+}

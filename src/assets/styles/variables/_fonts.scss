@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+$font-base-size: 16;
+$font-base-size-px: 16px;
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+$roboto: "Roboto Condensed", sans-serif;
+
+@function pxtorem($size) {
+  @return ($size / $font-base-size-px) * 1rem;
+}
