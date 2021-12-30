@@ -1,0 +1,9 @@
+@import "./fonts";
+
+@mixin borderRadius {
+  border-radius: pxtorem(5px);
+}
+
+@mixin boxShadow {
+  box-shadow: 0 0 pxtorem(5px) rgba(228, 15, 164, 0.2);
+}
