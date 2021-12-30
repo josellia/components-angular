@@ -1,4 +1,12 @@
+@import "../../../assets/styles/global.scss";
 
-.form-control{
-    border: none;
+.main {
+  @include flex-grid-container(wrap);
+}
+
+// .main__item {
+
+// }
+.form-control {
+  border: none;
 }

@@ -7,3 +7,17 @@
 @mixin boxShadow {
   box-shadow: 0 0 pxtorem(5px) rgba(228, 15, 164, 0.2);
 }
+
+/********** GRID **********************/
+@mixin flex-grid-container($wrap: null) {
+  display: flex;
+  flex-wrap: wrap;
+  @if $wrap {
+    // justify-content: space-between;
+    justify-content: center;
+  }
+}
+
+/********** *** **********************/
+
+// TODO implementar utilizando bootstrap

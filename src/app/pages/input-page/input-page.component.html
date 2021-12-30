@@ -1,18 +1,22 @@
-<form [formGroup]="formData" class="container">
-  <app-input
-    label="Cpf" 
-    controlName="cpf"
-    [formGroup]="formData"
-    mask="000.000.000-00"
-    class="form-control"
-  ></app-input>
-  <app-input
-    placeholder="Telefone"
-    controlName="phone"
-    [formGroup]="formData"
-    mask="(00) 000-0000"
-    class="form-control"
-  ></app-input>
+<form [formGroup]="formData" class="main">
+  <div class="main__item">
+    <app-input
+      label="Cpf"
+      controlName="cpf"
+      [formGroup]="formData"
+      mask="000.000.000-00"
+      class="form-control"
+    ></app-input>
+  </div>
+  <div class="main__item">
+    <app-input
+      placeholder="Telefone"
+      controlName="phone"
+      [formGroup]="formData"
+      mask="(00) 000-0000"
+      class="form-control"
+    ></app-input>
+  </div>
 </form>
 
 <!-- MENU: https://www.youtube.com/watch?v=M23bSfR0V84 -->
