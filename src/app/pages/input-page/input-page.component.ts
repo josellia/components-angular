@@ -13,7 +13,9 @@ export class InputPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.formData = this.fb.group({
-      cpf: ['']
+      cpf: [''],
+      phone:[''],
+      name: ['' ]
     })
   }
 
