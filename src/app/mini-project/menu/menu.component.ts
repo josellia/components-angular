@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  isExpanded: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

@@ -7,18 +7,23 @@ import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './core/material/material.module';
 import { MenuComponent } from './mini-project/menu/menu.component';
+import { LayoutComponent } from './mini-project/core/layout/layout.component';
+import { ListComponent } from './mini-project/list/list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    LayoutComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MaterialModule
 
   ],

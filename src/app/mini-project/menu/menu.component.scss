@@ -1,0 +1,28 @@
+.sidenav{
+  width: 250px;
+}
+.toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.tp-container {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+.tp-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+  width:100px;   
+}

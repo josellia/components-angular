@@ -1,1 +1,20 @@
-<p>menu works!</p>
+
+<mat-sidenav-container class = "tp-container">
+    <mat-sidenav mode = "side" opened>
+       <section class = "tp-section">
+        
+      <mat-list class="nav">
+        <a
+          mat-list-item
+          routerLinkActive="active-link"
+          class="hover"
+          routerLink="/list"
+        >
+         ddd 
+        </a>
+      </mat-list>
+       </section>
+      
+    </mat-sidenav>
+    <mat-sidenav-content> <router-outlet></router-outlet></mat-sidenav-content>
+ </mat-sidenav-container>
