@@ -9,6 +9,7 @@ import { MaterialModule } from './core/material/material.module';
 import { MenuComponent } from './mini-project/menu/menu.component';
 import { LayoutComponent } from './mini-project/core/layout/layout.component';
 import { ListComponent } from './mini-project/list/list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ListComponent } from './mini-project/list/list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     PagesModule,
     BrowserAnimationsModule,
     AppRoutingModule,

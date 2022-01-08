@@ -2,15 +2,15 @@
 <mat-sidenav-container class = "tp-container">
     <mat-sidenav mode = "side" opened>
        <section class = "tp-section">
-        
-      <mat-list class="nav">
+      <mat-list class="nav" *ngFor="let course of courses" >
+      
         <a
           mat-list-item
           routerLinkActive="active-link"
           class="hover"
           routerLink="/list"
         >
-         ddd 
+         {{course.title}}
         </a>
       </mat-list>
        </section>
@@ -18,3 +18,5 @@
     </mat-sidenav>
     <mat-sidenav-content> <router-outlet></router-outlet></mat-sidenav-content>
  </mat-sidenav-container>
+ 
+ 
