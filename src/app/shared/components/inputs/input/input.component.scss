@@ -5,3 +5,7 @@
 //     @include boxShadow;
 //     width: 20rem;
 // }
+
+input.ng-invalid.ng-touched {
+    border-color: red;    
+}

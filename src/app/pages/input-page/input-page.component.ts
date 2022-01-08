@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-input-page',
@@ -9,10 +14,9 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 export class InputPageComponent implements OnInit {
   formData!: FormGroup;
 
-
   constructor(private fb: FormBuilder) {}
 
-  get f(): {[key: string]: AbstractControl }{
+  get f(): { [key: string]: AbstractControl } {
     return this.formData.controls;
   }
   ngOnInit(): void {
@@ -30,17 +34,15 @@ export class InputPageComponent implements OnInit {
     });
   }
 
-  submit():void{
-
-    if(this.formData.invalid){
-
-      return
+  submitForm(): void {
+    if (this.formData.invalid) {
+      return;
     }
 
     alert('SUCESSO' + JSON.stringify(this.formData.value, null, 4));
   }
 
-  clearForm():void{
+  clearForm(): void {
     this.formData.reset();
   }
 }
