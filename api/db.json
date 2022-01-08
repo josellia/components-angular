@@ -1,0 +1,35 @@
+{
+  "curses": [
+    {
+      "id": 1,
+      "title": "Curso programação"
+    },
+    {
+      "id": 2,
+      "title": "Curso Arquitetura"
+    }
+  ],
+  "especifCurse": [
+    {
+      "id": 1,
+      "name": "React.JS",
+      "imageUrl": "",
+      "description": "Curso voltado para o desenvolviemnto web utilizando o framework React",
+      "curseId": 1
+    },
+    {
+      "id": 2,
+      "name": "Angular",
+      "imageUrl": "",
+      "description": "Curso voltado para o desenvolviemnto web utilizando o framework Angular",
+      "curseId": 1
+    },
+    {
+      "id": 3,
+      "name": "Clean Architecture",
+      "imageUrl": "",
+      "description": "Curso voltado para o implementação de sistemas que favorecem reusabilidade de código, coesão, independência de tecnologia e testabilidade.",
+      "curseId": 2
+    }
+  ]
+}

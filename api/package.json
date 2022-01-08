@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 8000"
+  },
+  "keywords": [],
+  "author": "josellia",
+  "license": "ISC"
+}
