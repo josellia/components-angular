@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './core/material/material.module';
+import { HighdarkDirective } from './shared/directives/highdark.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighdarkDirective
   ],
   imports: [
     BrowserModule,
