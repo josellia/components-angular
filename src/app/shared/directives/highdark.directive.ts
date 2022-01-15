@@ -1,10 +1,19 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, Input, OnChanges } from '@angular/core';
 
 @Directive({
-  selector: '[appHighdark]'
+  selector: '[highdark]',
 })
-export class HighdarkDirective {
+export class HighdarkDirective implements OnChanges {
+  defaultColor = 'rgb(128, 0, 128)';
 
-  constructor() { }
+  @Input('highdark') bgColor = '';
 
+  constructor(private el: ElementRef) {
+    el.nativeElement.style.customProperty = true;
+  }
+
+  ngOnChanges(): void {
+    this.el.nativeElement.style.backgroundColor  =
+      this.bgColor || this.defaultColor;
+  }
 }
