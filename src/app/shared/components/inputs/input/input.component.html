@@ -1,13 +1,7 @@
 <div [formGroup]="formGroup">
   <label for="">{{ label }}</label>
-  <input
-    type="text"
-    [placeholder]="placeholder"
-    [name]="controlName"
-    [formControlName]="controlName"
-    [mask]="mask"
-    [class]="class"
-  />
+  <input type="text" [placeholder]="placeholder" [name]="controlName" [formControlName]="controlName" [mask]="mask"
+    [class]="class" [id]="id" />
   <!-- <span *ngIf="validationError.hasErrorValidate(formControl, 'required')"
     >Campo obrigatório</span
   > -->
