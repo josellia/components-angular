@@ -18,3 +18,9 @@ export class ValidationErrorsService {
     return control.hasError(errorName);
   }
 }
+
+// it(`should input field required`,()=>{
+//   const inp = fixture.debugElement.query(By.css('#inp'));
+//   component.required=true;
+//   expect(inp.nativeElement.hasError('required')).toBeTruthy();        
+// })

@@ -20,4 +20,21 @@
 
 /********** *** **********************/
 
-// TODO implementar utilizando bootstrap
+@function rem($pixels, $content: 16) {
+  @return #{$pixels/$content}rem;
+}
+
+$colorMap: (
+  primary: (
+    text: #fff,
+    base: #800080,
+    light: #ff6347,
+    dark: #121212,
+  ),
+  secondary: (
+    text: #fff,
+    base: orange,
+    ligth: #dda53d,
+    dark: #c2820b,
+  ),
+);

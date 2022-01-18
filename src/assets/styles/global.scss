@@ -1,6 +1,8 @@
-@import "reset";
-@import "./variables/fonts";
-@import "./variables/mixins";
+
+@import "./config/variables/colors";
+@import "./config/variables/fonts";
+@import "./config/mixins/mixins";
+@import "./base/reset";
 
 // body {
 //   background-color: purple;

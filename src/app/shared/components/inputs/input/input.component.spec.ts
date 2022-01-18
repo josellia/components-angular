@@ -1,34 +1,19 @@
-import {  ComponentFixture, TestBed } from "@angular/core/testing";
-import { Component,  DebugElement } from '@angular/core';
-import { InputComponent } from "./input.component";
-import { By } from "@angular/platform-browser";
-import { InputPageComponent } from "src/app/pages/input-page/input-page.component";
-import { FormGroup, FormsModule } from "@angular/forms";
-
-@Component({
-  template: `
-  <div [formGroup]="formGroup">
-  <app-input
-  label="Cpf"
-></app-input>
-  </div>
-  `
-})
-class FakeComponet {
-  formGroup!: FormGroup;
-  label = '' ;
-}
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, DebugElement } from '@angular/core';
+import { InputComponent } from './input.component';
+import { By } from '@angular/platform-browser';
+import { InputPageComponent } from 'src/app/pages/input-page/input-page.component';
+import { FormGroup, FormsModule } from '@angular/forms';
 
 describe('InputComponent', () => {
   let component: InputComponent;
   let fixture: ComponentFixture<InputComponent>;
-  let fake: FakeComponet;
 
-  beforeEach((() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations:[InputComponent, FakeComponet]
+      declarations: [InputComponent],
     }).compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(InputComponent);
@@ -41,13 +26,24 @@ describe('InputComponent', () => {
   });
 
   it('should correctly render the passed @Input label', () => {
-  component.label = 'Cpf';
-  fixture.detectChanges();
-  expect(fixture.nativeElement.textContent).toBe('Cpf')
+    component.label = 'Cpf';
+    fixture.detectChanges();
+    expect(fixture.nativeElement.textContent).toBe('Cpf');
   });
 
-  it('should other form test @Input label', () => {
+  it('should correctly render the passed @Input placeholder', () => {
+    component.placeholder = 'Your CPF';
+    fixture.detectChanges();
 
+    fixture.whenStable().then(() => {
+      expect(component.placeholder).toBe('Your CPF');
+    });
+  });
+
+  it('should corretly render the passed @Input mask', () => {
+    const property = {
+      mask: "(999) 999-9999"
+    }
   })
 });
 

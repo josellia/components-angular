@@ -6,20 +6,22 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './core/material/material.module';
-import { HighdarkDirective } from './shared/directives/highdark.directive';
+// import { NgxCollapseDetailsModule } from 'ngx-collapse-details';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighdarkDirective
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    // NgxCollapseDetailsModule 
 
   ],
   providers: [],
